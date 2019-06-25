@@ -13,7 +13,7 @@
         <!--LauraViewFinder-->
         <scene sceneID="Iom-5S-7oi">
             <objects>
-                <tableViewController id="Qre-Iv-qYO" sceneMemberID="viewController">
+                <tableViewController id="Qre-Iv-qYO" customClass="PostTableTableViewController" customModule="lauraviewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aoC-CR-i2v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,37 +54,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef9-8r-I2P">
-                                <rect key="frame" x="184" y="297" width="156" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Photo Library"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8p-Gj-8Ba">
-                                <rect key="frame" x="20" y="305" width="136" height="107"/>
+                                <rect key="frame" x="38" y="318" width="136" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
                                     <action selector="accessCamera:" destination="DG3-bl-OEU" eventType="touchUpInside" id="0hZ-Vr-f3Z"/>
                                     <action selector="cameraTapped:" destination="oWH-Vy-E3x" eventType="touchUpInside" id="7bL-O9-eAY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hw-Uu-gvc">
-                                <rect key="frame" x="136" y="449" width="94" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Save"/>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ar-me-7dJ">
-                                <rect key="frame" x="196" y="636" width="97" height="30"/>
+                                <rect key="frame" x="172" y="280" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqy-N0-dIX">
-                                <rect key="frame" x="59" y="534" width="251" height="81"/>
+                                <rect key="frame" x="196" y="331" width="251" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="Albums"/>
@@ -93,23 +81,34 @@
                                     <action selector="albumsTapped:" destination="oWH-Vy-E3x" eventType="touchUpInside" id="oYT-IG-fdJ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cute-maltese-dog (330 x 296)-min-330x296" translatesAutoresizingMaskIntoConstraints="NO" id="Y82-Sd-8M8">
-                                <rect key="frame" x="100" y="659" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a-blonde-fur-seal-pup-ty-milford" translatesAutoresizingMaskIntoConstraints="NO" id="cQO-X9-lky">
+                                <rect key="frame" x="100" y="130" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hw-Uu-gvc">
+                                <rect key="frame" x="160" y="433" width="94" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savePhoto:" destination="oWH-Vy-E3x" eventType="touchUpInside" id="PSf-Sh-vhw"/>
+                                    <action selector="savePhotoTapped:" destination="oWH-Vy-E3x" eventType="touchUpInside" id="Oba-br-bxQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Fda-Yb-tPt"/>
                     </view>
                     <navigationItem key="navigationItem" title="AddNewPhoto" id="KbZ-PZ-mWL"/>
                     <connections>
-                        <outlet property="newImage" destination="Y82-Sd-8M8" id="Bix-Ox-9cU"/>
+                        <outlet property="caption" destination="7ar-me-7dJ" id="0UI-Ro-5p4"/>
+                        <outlet property="newImage" destination="cQO-X9-lky" id="0cX-ff-F4r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wst-OI-VQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="DG3-bl-OEU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2376.811594202899" y="-338.16964285714283"/>
+            <point key="canvasLocation" x="2465" y="-342"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EQv-sB-6aU">
@@ -131,6 +130,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cute-maltese-dog (330 x 296)-min-330x296" width="330" height="296"/>
+        <image name="a-blonde-fur-seal-pup-ty-milford" width="900" height="596"/>
     </resources>
 </document>
