@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		18DE30FE22C26E4A00456AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE30FD22C26E4A00456AAC /* AppDelegate.swift */; };
-		18DE310022C26E4A00456AAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE30FF22C26E4A00456AAC /* ViewController.swift */; };
 		18DE310322C26E4A00456AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DE310122C26E4A00456AAC /* Main.storyboard */; };
 		18DE310622C26E4A00456AAC /* lauraviewFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18DE310422C26E4A00456AAC /* lauraviewFinder.xcdatamodeld */; };
 		18DE310822C26E4C00456AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DE310722C26E4C00456AAC /* Assets.xcassets */; };
 		18DE310B22C26E4C00456AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DE310922C26E4C00456AAC /* LaunchScreen.storyboard */; };
+		18DE311522C27E6500456AAC /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DE311422C27E6500456AAC /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18DE30FA22C26E4A00456AAC /* lauraviewFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lauraviewFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DE30FD22C26E4A00456AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18DE30FF22C26E4A00456AAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18DE310222C26E4A00456AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18DE310522C26E4A00456AAC /* lauraviewFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lauraviewFinder.xcdatamodel; sourceTree = "<group>"; };
 		18DE310722C26E4C00456AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18DE310A22C26E4C00456AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18DE310C22C26E4C00456AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DE311422C27E6500456AAC /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 		18DE30FC22C26E4A00456AAC /* lauraviewFinder */ = {
 			isa = PBXGroup;
 			children = (
+				18DE311422C27E6500456AAC /* AddPhotoViewController.swift */,
 				18DE30FD22C26E4A00456AAC /* AppDelegate.swift */,
-				18DE30FF22C26E4A00456AAC /* ViewController.swift */,
 				18DE310122C26E4A00456AAC /* Main.storyboard */,
 				18DE310722C26E4C00456AAC /* Assets.xcassets */,
 				18DE310922C26E4C00456AAC /* LaunchScreen.storyboard */,
@@ -138,8 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18DE310022C26E4A00456AAC /* ViewController.swift in Sources */,
 				18DE310622C26E4A00456AAC /* lauraviewFinder.xcdatamodeld in Sources */,
+				18DE311522C27E6500456AAC /* AddPhotoViewController.swift in Sources */,
 				18DE30FE22C26E4A00456AAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
